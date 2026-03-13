@@ -73,7 +73,7 @@ const getBlogById =  async (req, res) => {
         if (!user) return res.status(401).json({message: "Unauthorized"})
         const {id} = req.params
         const blog = await blogDetails.findById(id).select("-createdAt, -updatedAt")
-            if (blog.length === 0) return res.status(400).json({message: "Blog does not exist"})
+            if (!blog) return res.status(400).json({message: "Blog does not exist"})
                 res.status(200).json({blog, message: "Blog found ✅"})
 
     } catch (error) {
