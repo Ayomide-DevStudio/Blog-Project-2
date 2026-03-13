@@ -9,7 +9,7 @@ const cookieParser = require('cookie-parser')
 connectDB()
 
 const server = express()
-const port = process.env.PORT || 2000
+//const port = process.env.PORT || 2000
 
 //middleware
 server.use(express.json())
