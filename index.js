@@ -24,6 +24,6 @@ server.use(cookieParser())
   server.use('/api', commentRouter)
 
 
-server.listen(port, () => {
-    console.log(`Server is listening on port ${port}`)
-})
+// server.listen(port, () => {
+//     console.log(`Server is listening on port ${port}`)
+// })
