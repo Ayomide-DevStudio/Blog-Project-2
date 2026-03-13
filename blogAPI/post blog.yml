@@ -1,0 +1,15 @@
+info:
+  name: post blog
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: http://localhost:2000/api/blog/post-blog
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

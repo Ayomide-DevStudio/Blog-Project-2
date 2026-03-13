@@ -1,0 +1,26 @@
+info:
+  name: signup
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:2000/api/user/signup
+  body:
+    type: form-urlencoded
+    data:
+      - name: username
+        value: daddyomehn
+      - name: email
+        value: fagbuyiayomide3@gmail.com
+      - name: password
+        value: ayomide123
+      - name: role
+        value: member
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,15 @@
+info:
+  name: delete a blog
+  type: http
+  seq: 9
+
+http:
+  method: DELETE
+  url: http://localhost:2000/api/blog/delete-blog/
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,15 @@
+info:
+  name: create comment
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: http://localhost:2000/api/blog/comment/create-comment
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

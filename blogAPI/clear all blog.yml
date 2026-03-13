@@ -1,0 +1,17 @@
+info:
+  name: clear all blog
+  type: http
+  seq: 7
+
+http:
+  method: DELETE
+  url: http://localhost:2000/api/blog/delete-all-blog
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YjNiYTBmY2UyNjhjZTk0MWRkYjQ5NyIsImlhdCI6MTc3MzM4NzYwNiwiZXhwIjoxNzczMzkxMjA2fQ.VL24xIXzyvpCbCSXLVekwQAYjI1pSJyQ88s23VeODxg
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
