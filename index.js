@@ -23,6 +23,11 @@ server.use(cookieParser())
   server.use('/api', userRouter)
   server.use('/api', commentRouter)
 
+server.get("/", (req, res) => {
+    res.json({ message: "Blog API running on Vercel 🚀" })
+})
+module.exports = server
+
 
 // server.listen(port, () => {
 //     console.log(`Server is listening on port ${port}`)
